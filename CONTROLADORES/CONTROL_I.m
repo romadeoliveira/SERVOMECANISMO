@@ -1,0 +1,1 @@
+clear; clc; %AÇÃO DE CONTROLE INTEGRAL(I)ki = [10 20 30 50 100];sz = size(ki);for n=1:sz(2)    num = ki(n);    den = [1 10 20 ki(n)];    G = tf(num,den)    step(G);    hold onendtitle('Resposta ao degrau unitário de G(s) = ki/s^3+10s^2+20s+ki','fontsize',14)ylabel('c(t)','fontsize',14)xlabel('t','fontsize',14);legend('Ki=10','Ki=20','Ki=30','Ki=40','Ki=100')
