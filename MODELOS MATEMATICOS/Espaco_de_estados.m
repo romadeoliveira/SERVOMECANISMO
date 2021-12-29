@@ -1,0 +1,1 @@
+clear; clc;%Definir as matrizes A, B, C, D A = [0 1; -5 -6];B = [0; 2];C = [1 0; 0 1];D = [0; 0];%Criar o espaço de estadossys = ss(A,B,C,D)%Converter em função transferênciaG = tf(sys)

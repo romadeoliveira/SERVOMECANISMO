@@ -1,0 +1,1 @@
+clc; clear;%O programa fornece quatro funções transferência, ou seja, quando se tem...%duas entradas e duas saídas.%Ver exemplo A.2.12 do Ogata!%No exemplo, ele pede 4 funções transferências.A = [0 1; -25 -5];B = [1 1; 0 1];C = [1 0; 0 1];D = [0 0;0 0];[num, den] = ss2tf(A,B,C,D,1) %Duas primeiras FT;[num, den] = ss2tf(A,B,C,D,2) % Duas ultimas FT;

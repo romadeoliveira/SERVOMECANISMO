@@ -1,0 +1,1 @@
+clear; clc;% Determinado zeros e pólos de G(s)num = [6]; % s+1den = [1 6 11 6]; % s^4+8*s^3+21*s^2+18*s = s(s+2)(s+3)^2tf(num,den)  % Função de transferência (tf)[z,p,k] = tf2zp(num,den) % Função para obter zeros, pólos e o ganho de G(s)
