@@ -1,1 +1,0 @@
-clear; clc; close all;%PDfigure;td = 1;kp = 1; j = 1; b = 0.5;G = tf([1], [j (b+kp*td) kp]);step(G);hold onkp = 2; j=1 ; b=0.5;G=tf([1], [j (b+kp*td) kp])step(G);title('Resposta ao distúrbio unitário (Controle PD)','fontsize',14)ylabel('c(t)','fontsize',14)xlabel('t','fontsize',14)legend('kp = 1, ti=1', 'kp=2,td=1,j=1,b=0.5')
