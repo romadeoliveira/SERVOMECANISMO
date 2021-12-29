@@ -1,0 +1,1 @@
+clear; clc; close all;%PIfigure;ti = 5;kp = 1; j = 1; b = 0.5;G = tf([1 0], [j b kp kp/ti]);step(G);hold onkp = 2; j=1 ; b=0.5;G=tf([1 0], [j b kp kp/ti])step(G);title('Resposta ao distúrbio unitário (Controle PI)','fontsize',14)ylabel('c(t)','fontsize',14)xlabel('t','fontsize',14)legend('kp = 1, ti=5', 'kp=2,ti=5,j=1,b=0.5')

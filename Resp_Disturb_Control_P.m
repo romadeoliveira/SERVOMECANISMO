@@ -1,0 +1,1 @@
+clear; clc; close all;kp = 1; j = 1; b=0.5;G=tf([1],[j b kp])step(G);hold onkp = 2; j=1; b=0.5;G=tf([1], [j b kp])step(G);title('Resposta ao distúrbio unitário (controle proporcional)','fontsize',14)ylabel('c(t)','fontsize',14)xlabel('t','fontsize',14)
